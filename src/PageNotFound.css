@@ -1,0 +1,58 @@
+.notfound-wrapper {
+width: 98vw;
+min-height: 100vh;
+padding: 0;
+margin: 0;
+background-color:#f2f2f2;
+display: flex;
+justify-content: center;
+}
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  background: linear-gradient(to right, red, white);
+  text-align: center;
+  color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 1s ease-in;
+}
+.notfound-container h1 {
+  font-size: 100px;
+  margin-bottom: 20px;
+  color: #e90707;
+  animation: bounce 1.2s infinite alternate;
+}
+
+.notfound-container p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.home-button {
+  text-decoration: none;
+  background-color: #2e2ecc;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #890dcc;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-10px); }
+}

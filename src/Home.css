@@ -1,0 +1,298 @@
+/* Container for all milk/nonveg/veg items */
+.home-fullscreen-wrapper{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color:#f2f2f2;
+  display: flex;
+  justify-content: center;  
+}
+.home-container{
+    width: 100%;
+    max-width: 1300px;
+    box-sizing: border-box;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+/* Page Title */
+.home-page-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #1976d2;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Search Bar Styling */
+.home-search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin: 0 auto 10px auto;  /* keep search bar centered with margin bottom */
+  display: block;
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.home-search-bar:focus {
+  border-color: #007bff;
+}
+
+.home-search-bar::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Price Filter Dropdown Box */
+.price-dropdown-wrapper {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto 30px auto;
+  position: relative;
+  font-size: 1rem;
+}
+
+.price-dropdown-toggle {
+  padding: 12px 20px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.3s ease;
+  user-select: none;
+  white-space: nowrap;
+  display: flex;             /* Make it flex */
+  align-items: center;       /* Vertically align center */
+  gap: 6px;                  /* Space between text and icon */
+}
+
+.price-icon {
+  position: relative;
+  top: 4px;          /* Shift icon down */
+  width: 1em;        /* Match font size */
+  height: 1em;
+  flex-shrink: 0;    /* Prevent shrinking if text is long */
+}
+
+.price-dropdown-toggle:hover {
+  border-color: #007bff;
+}
+
+/* Dropdown content with smaller height */
+.price-dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-width: 178px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: none; /* 🔁 Remove height restriction */
+  overflow-y: visible; /* 🔁 No scroll */
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+/* Price Checkbox Label */
+.price-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;  /* reduce margin below each checkbox */
+  color: #333;
+  font-size: 0.9rem;   /* smaller font size */
+  line-height: 1.2;    /* reduce line height */
+}
+
+
+.dropdown-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* gap between buttons */
+  margin-top: 10px; /* space above buttons */
+}
+
+.dropdown-btn {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Apply button style */
+.dropdown-btn.apply {
+  background-color: #007bff;
+  color: white;
+}
+
+.dropdown-btn.apply:hover {
+  background-color: #005ec4;
+}
+
+/* Cancel button style */
+.dropdown-btn.cancel {
+  background-color: #ccc;
+  color: #333;
+}
+
+.dropdown-btn.cancel:hover {
+  background-color: #aaa;
+}
+
+/* Product Grid */
+.home-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 0px;
+}
+
+/* Product Card */
+.home-product-card {
+  max-width: 250px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  margin: 10px;
+  justify-content: center;
+}
+
+.home-product-card:hover .home-product-image {
+transform: scale(1.05);
+}
+
+/* Product Image */
+.home-product-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Product Info */
+.home-product-info {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #333;
+}
+
+.home-product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.home-product-price {
+  font-size: 1rem;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.home-product-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Add to Cart Button */
+.home-add-cart-button {
+  padding: 10px 20px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+.home-add-cart-button:hover {
+  background-color: #125aa0;
+}
+
+/* Pagination */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.pagination-button {
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #bbb;
+}
+
+.pagination-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* No results message */
+.no-results {
+  margin-top: 50px;
+  color: #888;
+  font-size: 1.3rem;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px 10px;
+  }
+
+  .home-search-bar {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .price-dropdown-wrapper {
+    max-width: 100%;
+  }
+
+  .home-product-image {
+    height: 180px;
+  }
+}

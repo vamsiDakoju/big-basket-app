@@ -1,0 +1,288 @@
+/* General Cart Container Styles */
+.cart-fullscreen-wrapper {
+  width: 98vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #f2f2f2;
+  display: grid;
+  justify-content: center;
+}
+
+.cart-container {
+  font-family: Arial, sans-serif;
+  width: 100%; /* Increased width for a larger cart */
+  max-width: 1200px; /* Added a maximum width to prevent it from being too wide on larger screens */
+  margin: 20 auto;
+  padding: 60px 20px 20px 20px;
+  background-color: #f0f8ff; /* Light blue background for a more vibrant look */
+  border-radius: 12px; /* Slightly larger border radius for a more modern feel */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Increased shadow for depth */
+  margin-top: 80px;
+}
+
+.cart-container h1 {
+  text-align: center;
+  font-size: 38px;
+  color: #2c3e50; /* Darker shade for the header for contrast */
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #16a085; /* A more vibrant green border */
+  transition: all 0.3s ease;
+}
+
+.cart-container h1:hover {
+  color: #16a085; /* Change title color on hover */
+  cursor: pointer;
+}
+
+/* Cart Items List */
+.cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-items li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin: 12px 0;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cart-items li:hover {
+  background-color: #f7f7f7; /* Lighter hover color */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.cart-items img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-details {
+  flex-grow: 1;
+  margin-left: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-details h3 {
+  font-size: 20px;
+  color: #34495e;
+  margin: 0;
+  font-weight: 600;
+  flex-grow: 1;
+}
+
+.cart-details p {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin: 5px 0 0;
+  text-align: right; /* Align the price to the right */
+}
+
+/* Cart Actions */
+.cart-actions {
+  display: flex;
+  align-items: center;
+}
+
+.cart-actions button {
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.cart-actions .inc-btn {
+  background-color: #e67e22; /* Orange for increment */
+}
+
+.cart-actions .dec-btn {
+  background-color: #f39c12; /* Red for decrement */
+}
+
+.cart-actions .remove-btn {
+  background-color: #e74c3c; /* Red for remove */
+}
+
+.cart-actions .inc-btn:hover {
+  background-color: #d35400; /* Darker orange on hover */
+}
+
+.cart-actions .dec-btn:hover {
+  background-color: #e74c3c; /* Darker red for decrement button */
+}
+
+.cart-actions .remove-btn:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+.cart-actions p {
+  font-size: 20px;
+  margin: 0 15px;
+  color: #34495e;
+}
+
+/* Discount Buttons */
+.discount-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.discount-buttons button {
+  background-color: #f39c12; /* Orange discount buttons */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 0 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.discount-buttons button:hover {
+  background-color: #e67e22; /* Darker orange on hover */
+}
+
+.discount-buttons button:active {
+  background-color: #d35400; /* Darkest orange on click */
+}
+
+/* Summary Section */
+.summary {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.summary p {
+  font-size: 20px;
+  color: #2c3e50;
+  margin: 12px 0;
+}
+
+.summary strong {
+  font-size: 22px;
+  color: #e74c3c; /* Highlight the final price with a bold color */
+}
+
+/* Empty Cart Message */
+.cart-container p {
+  text-align: center;
+  font-size: 20px;
+  color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .cart-container {
+    width: 95%;
+    margin-top: 60px;
+  }
+
+  .cart-items li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-actions {
+    margin-top: 10px;
+  }
+}
+
+
+/* Coupon Section */
+.coupon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 15px; /* Space between input and button */
+}
+
+.coupon-section input {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 220px; /* Fixed width for input */
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coupon-section input:focus {
+  border-color: #2ecc71; /* Green border on focus */
+  box-shadow: 0 0 8px rgba(46, 204, 113, 0.3); /* Green shadow on focus */
+}
+
+.coupon-section button {
+  background-color: #2ecc71; /* Green background */
+  color: white;
+  padding: 12px 18px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.coupon-section button:hover {
+  background-color: #27ae60; /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.coupon-section button:disabled {
+  background-color: #bdc3c7; /* Disabled state (gray) */
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+
+.complete-purchase-btn {
+  background-color: #28a745; /* Green */
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  margin-left:275px;
+  margin-top: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.complete-purchase-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.05);
+}
+
+.complete-purchase-btn:active {
+  background-color: #1e7e34;
+  transform: scale(1);
+}
+.payment-method{
+  text-align: center;
+}
+.upi-section{
+  text-align: center;
+}

@@ -1,0 +1,101 @@
+/* Full page wrapper */
+.veg-fullscreen-wrapper {
+width: 98vw;
+min-height: 100vh;
+padding: 0;
+margin: 0;
+background-color:#f2f2f2;
+display: flex;
+justify-content: center;
+}
+.veg-product-card {
+background-color: white;
+border-radius: 12px;
+box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 15px;
+box-sizing: border-box;
+}
+
+/* Container */
+.veg-container {
+width: 100%;
+max-width: 1300px;
+padding: 100px 40px 40px;
+box-sizing: border-box;
+text-align: center;
+}
+
+/* Page title */
+.veg-page-title {
+font-size: 2.2rem;
+color: orangered;
+margin-bottom: 30px;
+font-weight: bold;
+}
+
+/* Product list */
+.veg-product-list {
+list-style: none;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 25px;
+padding: 0;
+margin: 0;
+}
+
+.veg-product-card:hover .veg-product-image {
+transform: scale(1.1);
+}
+
+.veg-product-image {
+width: 100%;
+height: 100%;
+border-radius:12px;
+object-fit: cover;
+transition: transform 0.4s ease;
+}
+/* Product info */
+.veg-product-info {
+text-align: center;
+margin: 10px 0;
+}
+
+.veg-product-name {
+font-size: 1.2rem;
+margin: 5px 0;
+color: #333;
+}
+
+.veg-product-price {
+font-size: 1rem;
+color: #888;
+}
+
+/* Add to cart button */
+.veg-add-cart-button {
+color:white;
+background-color: orangered;
+border: none;
+border-radius: 6px;
+padding: 10px 15px;
+font-size: 1rem;
+cursor: pointer;
+margin-top: auto;
+transition: background-color 0.3s ease;
+width: 100%;
+}
+
+.veg-add-cart-button:hover {
+border-color: red;
+}
+
+.veg-product-description {
+font-size: 0.95rem;
+color: #666;
+margin-top: 8px;
+}

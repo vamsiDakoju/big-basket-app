@@ -1,0 +1,90 @@
+/* Full page wrapper */
+.choco-fullscreen-wrapper {
+  width: 98vw;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color:#f2f2f2;
+  display: flex;
+  justify-content: center;
+}
+/* Container */
+.choco-container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 100px 40px 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* Page title */
+.choco-page-title {
+  font-size: 2.2rem;
+  color: #4CAF50;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Product list */
+.choco-product-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+/* Product info */
+.choco-product-info {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.choco-product-name {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #333;
+}
+
+.choco-product-price {
+  font-size: 1rem;
+  color: #888;
+}
+
+/* Add to cart button */
+.choco-add-cart-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+.choco-product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+/* Image styling and transition */
+.choco-product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+/* Hover zoom effect */
+.choco-product-card:hover .choco-product-image {
+  transform: scale(1.1);
+}
